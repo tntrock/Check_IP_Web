@@ -2,6 +2,8 @@
 
 一個簡單的「我的 IP 是多少」網站，部署在 Cloudflare Workers 上。
 
+🔗 **https://ip.info-sec.vip**
+
 打開網頁就能看到目前連線使用的 IP，以及所在地區、網路業者等連線資訊；也可以直接用 `curl` 取得純文字 IP，或用 `/json` 拿到完整資料給程式使用。
 
 ## 特色
@@ -23,15 +25,15 @@
 
 ```sh
 # 取得 IP
-curl https://<你的網域>
+curl https://ip.info-sec.vip
 
 # 取得完整資訊
-curl https://<你的網域>/json
+curl https://ip.info-sec.vip/json
 ```
 
 ```powershell
 # Windows PowerShell
-(Invoke-WebRequest https://<你的網域>/ip).Content
+(Invoke-WebRequest https://ip.info-sec.vip/ip).Content
 ```
 
 `/json` 回傳範例：

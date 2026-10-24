@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "check-ip-web",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  // 開啟 Workers Logs，取代原本寫到檔案的訪客紀錄
+  "observability": {
+    "enabled": true
+  }
+}
